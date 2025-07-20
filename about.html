@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About Us - The Perfume Garden Clone</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <!-- Notification Bar -->
+  <div class="notification-bar">
+    FREE DELIVERY FOR ALL ORDERS OVER R750 | COURIER AVAILABLE THROUGHOUT SOUTH AFRICA ONLY
+  </div>
+
+  <!-- Header -->
+  <header class="main-header">
+    <button class="menu-btn" aria-label="Open menu" id="menu-btn">
+      &#9776;
+    </button>
+    <div class="logo">
+      <span class="logo-icon">P</span>
+      <span class="logo-text">THE PERFUME GARDEN</span>
+    </div>
+    <nav class="nav-menu" id="nav-menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="fragrances.html">Fragrances</a></li>
+        <li><a href="gifts.html">Gifts</a></li>
+        <li><a href="about.html" class="active">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="cart-btn" aria-label="View cart">
+      &#128722;
+    </button>
+  </header>
+
+  <main>
+    <h1>About Us</h1>
+    <p>Content for the About Us page goes here.</p>
+  </main>
+
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const navMenu = document.getElementById('nav-menu');
+
+    menuBtn.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
